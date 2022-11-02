@@ -10,6 +10,6 @@ neovim@^0.8
 git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 nvim +PackerSync
 cd ~/.config/nvim/lua
-git clone https://github.com/xdutaotao/astronvim_userconfig.git user
+git clone https://github.com/xdutaotao/astronvim_userconfig user
 nvim +PackerSync
 ```
