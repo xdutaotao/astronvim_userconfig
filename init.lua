@@ -6,7 +6,7 @@ local config = {
 		auto_quit = false,
 	},
 
-	colorscheme = "sonokai",
+	colorscheme = "monokai",
 
 	options = {
 		opt = {
@@ -73,6 +73,8 @@ local config = {
 	plugins = {
 		init = {
 			["sainnhe/sonokai"] = {},
+			["ethanholz/nvim-lastplace"] = {},
+			["tanvirtin/monokai.nvim"] = {},
 			--[[
 			["jsfaint/gen_tags.vim"] = {
 				disable = false,
@@ -234,7 +236,8 @@ local config = {
 			local null_ls = require "null-ls"
 			config.sources = {
 				null_ls.builtins.formatting.stylua,
-				-- null_ls.builtins.formatting.prettierd,
+				null_ls.builtins.formatting.shfmt,
+				null_ls.builtins.formatting.prettierd,
 				null_ls.builtins.formatting.eslint_d,
 				null_ls.builtins.diagnostics.eslint_d,
 				null_ls.builtins.code_actions.eslint_d,
